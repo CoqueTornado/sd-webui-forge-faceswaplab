@@ -249,7 +249,7 @@ def tools_ui() -> None:
             )
             with gr.Row():
                 build_batch_files = gr.components.File(
-                    type="file",
+                    type="filepath",
                     file_count="multiple",
                     label="Batch Sources Images",
                     optional=True,
@@ -310,7 +310,7 @@ def tools_ui() -> None:
             )
             with gr.Row():
                 extracted_source_files = gr.components.File(
-                    type="file",
+                    type="filepath",
                     file_count="multiple",
                     label="Batch Sources Images",
                     optional=True,
@@ -366,7 +366,7 @@ def tools_ui() -> None:
             )
             with gr.Row():
                 batch_source_files = gr.components.File(
-                    type="file",
+                    type="filepath",
                     file_count="multiple",
                     label="Batch Sources Images",
                     optional=True,
