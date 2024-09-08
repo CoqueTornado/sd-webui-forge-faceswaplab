@@ -4,6 +4,8 @@ This updated has been created to run specifically on Forge
 
 The error encountered with FaceSwapLab in the img2img feature of Automatic1111's Stable Diffusion WebUI due to a mismatch in the number of arguments being passed to the apply_overlay() function has been corrected with an update to the imgutils.py on this version.
 
+To install, open Forge and click on Extensions, click on the "Install from URL" and paste in my github address (https://github.com/Ethereum-John/sd-webui-forge-faceswaplab). Make sure you "apply and quit" and restart Forge so it loads correctly.
+
 Below are important notes from the previous updates on a111
 
 
