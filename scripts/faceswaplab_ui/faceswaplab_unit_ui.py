@@ -113,7 +113,7 @@ def faceswap_unit_ui(
                     elem_id=f"{id_prefix}_face{unit_num}_reference_image",
                 )
                 batch_files = gr.components.File(
-                    type="file",
+                    type="filepath",
                     file_count="multiple",
                     label="Batch Sources Images",
                     optional=True,
