@@ -1,3 +1,12 @@
+#FaceSwapLab for Stability Matrix's WebUI Forge.  
+
+This updated has been created to run specifically on Forge  
+
+The error encountered with FaceSwapLab in the img2img feature of Automatic1111's Stable Diffusion WebUI due to a mismatch in the number of arguments being passed to the apply_overlay() function has been corrected with an update to the imgutils.py on this version.
+
+Below are important notes from the previous updates on a111
+
+
 # FaceSwapLab for a1111/Vlad
 
 V1.2.3 : Breaking change for settings, please read changelog.
