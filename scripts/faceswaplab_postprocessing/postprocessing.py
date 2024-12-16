@@ -23,7 +23,12 @@ def enhance_image(image: Image.Image, pp_options: PostProcessingOptions) -> Imag
             result_image = img2img_diffusion(
                 img=result_image, options=pp_options.inpainting_options
             )
+        print(f"Tipo de result_image en postprocessing.py: {type(result_image)}")
+        print(f"Valor de result_image en postprocessing.py: {result_image}")
+        if isinstance(result_image, tuple):
+            result_image = result_image[0]  # Extrae la imagen del tuple
         result_image = upscale_img(result_image, pp_options)
+
 
         if (
             pp_options.inpainting_when == InpaintingWhen.BEFORE_RESTORE_FACE.value
